@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="it.take2me.partnerapp"
+        version="0.7.0">
+
+  <name>Add Custom APN</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/apn.js" target="js/apn.js"/>
+
+  <js-module src="www/apn.js" name="apn">
+    <clobbers target="apn" />
+  </js-module>
+
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="APN">
+        <param name="android-package" value="it.take2me.partnerapp.APN"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/APN.java" target-dir="src/it/take2me/partnerapp/"/>
+  </platform>
+</plugin>

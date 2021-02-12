@@ -1,0 +1,28 @@
+{
+    "name": "cordova-apn-plugin",
+    "version": "0.1.0",
+    "description": "Cordova plugin to add custom APN",
+    "cordova": {
+      "id": "cordova-apn-plugin",
+      "platforms": [
+        "android"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/guestisp/cordova-apn-plugin.git"
+    },
+    "keywords": [
+      "cordova",
+      "plugin",
+      "apn",
+      "ecosystem:cordova",
+      "cordova-android"
+    ],
+    "author": "GUEST.it s.r.l.",
+    "license": "GPL",
+    "bugs": {
+      "url": "https://github.com/guestisp/cordova-apn-plugin/issues"
+    },
+    "homepage": "https://github.com/guestisp/cordova-apn-plugin"
+  }
